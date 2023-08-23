@@ -1,0 +1,34 @@
+---
+
+import MainLayout from '../layouts/MainLayout.astro';
+
+// const allWorks = await Astro.glob("./works/*.md");
+// console.log(" ~allWorks", allWorks);
+---
+
+<MainLayout title="Guo Chen's Portfolio">
+	<section>
+		<h1>Guo Chen</h1>
+		<h2>
+			I’m a product designer who enjoys solving technical problems and front-end coding. Hosting a <a href="https://rss.com/podcasts/notjustpixels/">design podcast</a> and <a href="https://www.letsguo.com/">blog</a>. Previously at <a href="https://www.datadoghq.com/">Datadog</a> and <a href="https://corp.roblox.com/">Roblox</a>.
+		</h2>
+
+		<img src="structure.png" alt="buildings and people line illustrations">
+
+	</section> 
+		
+	<!-- what should I add if a section doesn't have a heading? -->
+	<section aria-label="project-list"> 
+
+		<ul>
+			<li><a href="works/datadog/">Datadog</a></li>
+			<li><a href="works/cn/">Creator Now</a></li>
+			<li><a href="works/roblox/">Roblox</a></li>
+			<li><a href="works/tchat/">TChat</a></li>
+		</ul>
+		
+		
+	</section>
+	
+</MainLayout>
+

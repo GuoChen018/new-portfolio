@@ -1,0 +1,46 @@
+---
+let {title} = Astro.props
+
+import Footer from "../components/Footer.astro"
+import Nav from "../components/Nav.astro"
+
+import '../styles/style.scss'
+
+const {frontmatter} = Astro.props;
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+        <Nav></Nav>
+    </head>
+    
+	<body>
+        <header>
+            <a href="#content" class="skip-link">Skip to main content</a>
+            
+        </header>
+        <main id="content">
+            <img src={frontmatter.img} alt={frontmatter.img_alt} width="800">
+            <h1>{frontmatter.title}</h1>
+            <h3>{frontmatter.description}</h3>
+            <h3>Role</h3>
+            <p>{frontmatter.role}</p>
+            <h3>Team</h3>
+            <p>{frontmatter.team}</p>
+            <h3>Timeline</h3>
+            <p>{frontmatter.timeline}</p>
+
+            <slot>
+
+            </slot>
+        </main>
+        <Footer></Footer>
+	</body>
+    
+</html>

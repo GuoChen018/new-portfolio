@@ -1,0 +1,42 @@
+---
+
+import MainLayout from '../layouts/MainLayout.astro'
+import Timeline from '../components/Timeline.astro'
+import Card from '../components/Card.astro';
+---
+
+<MainLayout title="About Guo Chen">
+    <section>
+        <h2>INFJ. Curious. Self-driven. These are the three words to describe myself.</h2>
+        <p>I’m a digital product designer obsessed with building. But how did I get here and where am I now?</p>
+    </section>
+    <section>
+        <h3>How I got here</h3>
+        <Timeline></Timeline>
+    </section>
+    <section>
+        <h3>My design values</h3>
+        <p>What I care about as a designer</p>
+        <ul class="one_column">
+            <Card title="Visual design" description="I care a lot about the details and making things look great." image="cube.png"></Card>
+            <Card title="Visual design" description="I care a lot about the details and making things look great." image="cube.png"></Card>
+            <Card title="Visual design" description="I care a lot about the details and making things look great." image="cube.png"></Card>
+        </ul>
+    </section>
+    <section>
+        <h3>Now, let's get personal...</h3>
+        <p>Here are some stuff I like to do outside of designing / working</p>
+        <article>
+            <h4>Anime</h4>
+            <p>I LOVE watching anime. Here are some of my favorites:</p>
+            <ul class="two_columns">
+                <Card description="I care a lot about the details and making things look great." image="cube.png"></Card>
+                <Card description="I care a lot about the details and making things look great." image="cube.png"></Card>
+                <Card description="I care a lot about the details and making things look great." image="cube.png"></Card>
+                <Card description="I care a lot about the details and making things look great." image="cube.png"></Card>
+            </ul>
+        </article>
+        
+    </section>
+</MainLayout>
+
